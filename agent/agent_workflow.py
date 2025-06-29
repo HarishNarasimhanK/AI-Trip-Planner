@@ -5,7 +5,7 @@ from langgraph.prebuilt import ToolNode, tools_condition
 from tools.weather_info_tool import WeatherInfoTool
 from tools.currency_conversion_tools import CurrencyConverterTool
 from tools.place_search_tool import PlaceSearchTool
-from tools.calculator_tool import CalculatorTool
+from tools.expense_calculator_tool import ExpenseCalculatorTool
 
 
 class GraphBuilder:
@@ -18,7 +18,7 @@ class GraphBuilder:
         self.weather_tools = WeatherInfoTool()
         self.place_search_tools = PlaceSearchTool()
         self.currency_converter_tools = CurrencyConverterTool()
-        self.calculator_tools = CalculatorTool()
+        self.calculator_tools = ExpenseCalculatorTool()
 
         self.tools.extend([* self.weather_tools.weather_tools_list,
                            * self.place_search_tools.weather_tools_list,
