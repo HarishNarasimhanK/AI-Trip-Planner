@@ -5,6 +5,7 @@ python-dotenv
 pydantic
 httpx
 requests
+fastapi
 langgraph
 langchain
 langchain-community
