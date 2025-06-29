@@ -1,0 +1,5 @@
+llm:
+  groq:
+    provider: "groq"
+    model_name: "llama-70b-8192"
+    

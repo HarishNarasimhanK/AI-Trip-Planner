@@ -1,0 +1,17 @@
+ipykernel
+streamlit
+uvicorn
+python-dotenv
+pydantic
+httpx
+requests
+langgraph
+langchain
+langchain-community
+langchain-experimental
+langchain-groq
+langchain-google-community
+langchain-tavily
+setuptools
+
+-e .
