@@ -23,7 +23,7 @@ class WeatherForecastTool:
         try:
             url = f"{self.base_url}/forecast"
             params = {
-                "q": place,
+                "q": place, 
                 "appid": self.api_key,
                 "cnt": 10,
                 "units": "metric"

@@ -21,7 +21,7 @@ class WeatherInfoTool:
             """
             weather_data = self.weather_service.get_current_weather(city)
             if weather_data:
-                temp = weather_date.get("main", {}).get('temp', 'N/A ')
+                temp = weather_data.get("main", {}).get('temp', 'N/A ')
                 desc = weather_data.get("weather", [{}])[0].get("description", "N/A")
                 return f"Current weather in {city} is {temp} °C ,{desc}"
             return f"Couldn 't fetch the weather data for the city {city}"
