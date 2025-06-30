@@ -25,6 +25,9 @@ class GraphBuilder:
                            * self.currency_converter_tools.weather_tools_list,
                            * self.calculator_tools.weather_tools_list])
         self.llm_with_tools = self.llm.bind_tools(tools = self.tools)
+
+        self.graph = None
+
         self.system_prompt = SYSTEM_PROMPT
 
     def agent_function(self, state : MessageState):
